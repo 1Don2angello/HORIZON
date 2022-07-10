@@ -1,0 +1,119 @@
+/* UNIVERSALES - */
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+h1{
+    color: rgb(56, 56, 56);
+    text-decoration: none;
+    font-size: 3rem;
+}
+
+
+.contenedor{
+    width: 90%;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+.barra{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 3rem;
+    background-color: rgb(255, 255, 255);
+}
+.barra a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    margin-right: 2rem;
+}
+.barra a:last-of-type{
+    margin: 0;
+}
+
+@media (min-width: 768px){
+    .barra{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+/*////////////////// header/////////////// */
+.site_header{
+ padding: 5rem;
+}
+.site_header a{
+    text-decoration: none;
+}
+
+
+.site_header.inicio{
+    background-image: url();
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+    min-height: 60rem;
+}
+.contenido_header{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+@media (min-width: 768px){
+    .contenido_header{
+        text-align: center;
+    }
+}
+.image{
+    width: 5%;
+    padding: 0;
+    margin-left: 0;
+}
+/*////////////////// navegacion ///////// */
+.navegacion a{
+    display: block;
+    font-size: 1.5rem;
+    text-align: left;
+}
+/* celulares 480 */
+/* TABLETAS:  */
+@media (min-width: 768px){
+    .navegacion a{
+        display: inline-block;
+        margin-right: 2rem;
+        font-size: 2rem;
+    }
+}
+.navegacion a:hover{
+    color: paleturquoise
+}
+/* mobile_menu */
+.navegacion:target{
+    display: block;
+
+}
+.navegacion{
+    display: none;
+}
+@media (min-width:768px){
+    .mobile_menu{
+        display: none;
+    }
+}
+
+@media (min-width:768px){
+    .navegacion{
+        display: block;
+    }
+}

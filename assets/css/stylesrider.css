@@ -1,0 +1,415 @@
+/*
+font-family: 'Anton', sans-serif;
+font-family: 'Montserrat', sans-serif;
+*/
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/maps";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/utilities";
+@import url("INTEGRADORA/css/nombres de colores.scss");
+:root {
+    --titulos: #006bee;
+    --subtitulos: #191b19;
+    --blanco: #ffffff;
+    --verde: rgb(61, 251, 27);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html{
+    font-size:62.5%; /* Unidades en REM */
+    
+}
+
+/* EL HEADER DE FORMA PERMANENTE*/
+header {
+   background: #fff;
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   z-index: 999px;
+   box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+}
+
+header  {
+   background: #fff;
+   position: fixed;
+}
+
+.contenedor {
+    width: 90%;
+    margin:auto;
+}
+
+.header {
+  padding: 10px 16px;
+  background: #555;
+  color: #f1f1f1;
+}
+
+
+/* Page content */
+
+.content {
+  padding: 16px;
+}
+
+
+.sticky {
+  position: absolute;
+  top: 0;
+  width: 100%
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+/* PARA QUE SE VEA MAS BONITO EL HEADER */
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+h1{
+    color: var(--titulos);
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Anton', sans-serif;
+    text-transform: uppercase;
+
+}
+
+.boton{
+    background-color: var(--subtitulos);
+    color: var(--blanco) ;
+    text-decoration: none;
+    padding: 1rem 3rem;
+    margin-top: 3rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    border-radius: 3rem;
+    text-align: center;
+}
+
+.contenedor{
+    width: 120rem;
+    margin: 0 auto;
+}
+
+/** NAVEGACION PRINCIPAL */
+.nav_bg{
+    background-color: var(--titulos);
+}
+.navbar-dark {
+    display: flex;
+    justify-content: space-around;
+}
+.navbar-dark a{
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 1rem;
+}
+.navbar-dark a:hover{
+    background-color: #fff;
+    color: black;
+}
+
+/*-------------------------------------------*/
+
+
+
+/*--------- Anime Principal ------------------------*/
+
+.anime-principal {
+    font-size: 16px;
+    min-height: 40.62em;
+    color: #FFF;
+    background: linear-gradient(rgba(0, 0, 0,.50) 0%, rgba(0, 0, 0,.60) 100%), url(../image/rider.jpg);
+    background-position: center center;
+    background-size: cover;
+    margin-bottom: 3.12em;
+    display: flex;
+    align-items: end;
+}
+
+.anime-principal .contenedor {
+    margin: 0 auto;
+    margin-bottom: 6.25em;
+}
+
+.anime-principal .titu {
+    font-weight: 600;
+    font-size: 3.12em;
+    margin-bottom: 0.4em;
+}
+
+.anime-principal .descripcion {
+    font-weight: normal;
+    font-size: 1em;
+    line-height: 1.75em;
+    max-width: 50%;
+    margin-bottom: 1.25em;
+}
+
+.anime-principal .boton {
+    background: rgba(0,0,0, 0.5);
+    border:none;
+    border-radius: 0.31em;
+    padding: 0.92em 1.87em;
+    color: #fff;
+    margin-right: 1.25em;
+    cursor: pointer;
+    transition: .3s ease all;
+    font-size: 1.12em;
+}
+
+.anime-principal .boton:hover {
+    background: #FFF;
+    color: #000;
+}
+
+.anime-principal .boton i {
+    margin-right: 1.25em;
+
+}
+
+.cont {
+    display: flex;
+    justify-content: center;
+    margin: 20 px;
+
+}
+
+.far {
+        margin: 20px;
+}
+
+.typa {
+    margin: 20px;
+}
+
+.frase {
+    font-size: 16px;
+    min-height: 40.62em;
+    color: #FFF;
+    background: linear-gradient(rgba(0, 0, 0,.50) 0%, rgba(0, 0, 0,.60) 100%), url(../image/mine.jpg);
+    background-position: center center;
+    background-size: cover;
+    margin-bottom: 3.12em;
+    display: flex;
+    align-items: end;
+}
+
+.ola {
+    color: #fff;
+}
+
+/*---------------------------------------*/
+
+html, body {
+    margin:0;
+    padding:0;
+    height:100%;
+}
+
+.servicios {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 4rem;
+}
+
+.servicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.servicio h3{
+    color: var(--subtitulos);
+    font-weight: bold;
+}
+
+.servicio p{
+    text-align: center;
+    line-height: 2;
+}
+
+.servicios .iconos{
+    height: 10rem;
+    width: 10rem;
+    background-color: var(--gris);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.centrar_titulo{
+    text-align: center;
+    margin-bottom: 5rem;
+    text-transform: uppercase;
+    font-size: 3rem;
+    color: var(--titulos);
+}
+.navegacion a:hover{
+    color: orange;
+}
+.navegacion a{
+    color: rgb(252, 252, 252);
+    text-decoration: none;
+    font-size: 1.2rem;
+    display: block;
+    display: inline-block;
+    margin-right: 1.5rem;
+
+}
+
+/**** FORMULARIO ****/
+.formulario{
+    background-color: var(--titulos);
+    width: min(60rem, 100%);
+    margin: 0 auto;
+    padding: 2.5rem;
+    border-radius: 2rem;
+}
+.formulario fieldset{
+    border: none;
+}
+.formulario legend{
+    text-align: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: #ffffff;
+}
+.campo{
+    margin-bottom: 1rem;
+}
+.campo label{
+    color: #ffffff;
+    font-weight: 700;
+    margin-bottom: .5rem;
+    display: block;
+}
+.campo textarea{
+    height: 20rem;
+}
+.input_text{
+    width: 100%;
+    border: none;
+    padding: 1.3rem;
+    border-radius: 1rem;
+}
+/*footer*/
+.bg-transparent {
+    position:absolute;
+    height:50px;
+    line-height:50px;
+    /*background:rgba(0, 0, 0, 0.362);*/
+    background-color: transparent;
+    /*color:white;*/
+    text-align:center;
+    left:0;
+    width:100%;
+}
+.imagen-logo{
+    width:165; 
+    height:24;
+}
+.derechos{
+    text-align: center;
+}
+.derechos p{
+    font-size: 1rem;
+    margin: 0;
+    color: white;
+    font-weight: bold;
+}
+.un-heading-line span {
+    height: 0px;
+    border-top: 2px solid rgba(52,52,52,0.1);
+    display: block;
+    position: relative;
+    top: 0px;
+    width: 100%;
+}
+.contenido-hero2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+.navbar {
+    top: 0rem;
+    margin-bottom: 0rem;
+    margin-top: 0rem;
+    border: 0rem;
+}
+.titulo{
+    text-align: center;
+    margin-bottom: 5rem;
+    text-transform: uppercase;
+    font-size: 3rem;
+    color: var(--titulos);
+    margin-top: 3rem;
+}
+.contenedor-footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.site-footer{
+    background-color: gray;
+    margin: 0;
+    padding: 2rem 5rem; /*el borde de footer*/
+
+}
+.redes{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.compania{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.menu ul,li{
+    background-color: gray;
+    color: grey;
+}
+.menu a{
+    font-size: 1rem;
+    margin: 0;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+.card-body {
+    flex: 1 1 auto;
+    padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
+    color: var(--bs-card-color);
+}
+.text-start {
+    text-align: left !important;
+}
+
+.img:hover {
+    color: #000;
+    height: 496px;
+    width: 300px;
+    margin: 5px;
+}
